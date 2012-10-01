@@ -1,0 +1,6 @@
+this is for users who do not have an email address.  Most notably, this is in the Atlantis and Waikiki offices.
+
+NEXT STEPS:
+	-If they already have an account, add an if statement that will reset their password
+
+	-I could use that in the standard file as well, because occasionally I might try creating an account for someone who already has one
