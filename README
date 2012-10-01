@@ -1,4 +1,4 @@
-this is for users who do not have an email address.  Most notably, this is in the Atlantis and Waikiki offices.
+this is for users who do not have an email address. 
 
 NEXT STEPS:
 	-If they already have an account, add an if statement that will reset their password
