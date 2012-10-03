@@ -18,7 +18,7 @@ for email in `cat /Users/paul/shell_scripts/drush_user_create/india/users_exampl
 	echo " "
 	echo " "
 
-drush @live ucrt $username --mail=$email --password=Hello123
+drush @live ucrt $username --mail=$email --password=LetMeIn
 drush @live urol "General Role" $username
 drush @live urol "Atlantis" $username
 
