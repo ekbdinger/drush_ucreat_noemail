@@ -4,3 +4,13 @@ NEXT STEPS:
 	-If they already have an account, add an if statement that will reset their password
 
 	-I could use that in the standard file as well, because occasionally I might try creating an account for someone who already has one
+
+October 14, 2012
+
+	--See if I can add a random pw
+	--output the username and password to a text file
+
+OCTOBER 22, 2012
+
+	-Have it create a file users_list<date>.txt.  That way I have a record of any users I create on a particular day.
+		there is a data variable, so just need to look that up
