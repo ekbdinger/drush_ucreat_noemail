@@ -4,6 +4,7 @@
 # an email adress (Atlantis and Waikiki Offices)
 
 # in the example file just list their email addresses (fake) on line at a time
+# in this case it will be username@india.email.com
 
 # for user in $list
 for email in `cat /Users/paul/shell_scripts/drush_user_create/atlantis/users_example_file_india`
