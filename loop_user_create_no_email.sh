@@ -28,7 +28,7 @@ echo " "
 echo "SQL Time"
 echo " "
 drush @live sqlq "UPDATE users SET DATA = (select data2 from dummytable) WHERE name = '$username'"
-echo $username >> "user_list$(date +%Y_%m_%d).txt" # verify this works, mv to folder
+echo $username >> "user_list_$(date +%Y_%m_%d).txt" # verify this works, mv to folder
 
 echo " "
 echo " "
