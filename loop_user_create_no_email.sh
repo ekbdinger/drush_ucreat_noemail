@@ -17,8 +17,11 @@ for email in `cat /Users/paul/shell_scripts/drush_user_create/atlantis/users_exa
 
 drush @live ucrt $username --mail=$email
 
+ #trying to generate a random password
+NUMBER=$[ ( $RANDOM % 900 )  + 100 ]
+PASSWORD="Hello$NUMBER"
 
-drush @live upwd $username --password=Hello123
+drush @live upwd $username --password=$PASSWORD
 drush @live urol "General Role" $username
 drush @live urol "Atlantis" $username
 
@@ -26,9 +29,9 @@ echo " "
 echo "SQL Time"
 echo " "
 drush @live sqlq "UPDATE users SET DATA = (select data2 from dummytable) WHERE name = '$username'"
-echo $username >> "archive_users_created/user_list_$(date +%Y_%m_%d).txt" # verify this works, mv to folder
+echo "USERNAME:  $username  PASSWORD:  $PASSWORD" >> "archive_users_created/user_list_$(date +%Y_%m_%d).txt" # verify this works, mv to folder
 
 echo " "
 echo " "
-echo " users created"
+echo " the user account $username was created"
 done
